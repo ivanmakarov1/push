@@ -73,9 +73,13 @@ document.querySelector(".b-5").onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
+
 let d6 = ["test", 5, 12];
 
 function f6() {
+  let val = document.querySelector(".i-6");
+  d6[d6.length] = val.value;
+  
   showArr(".out-6", d6);
 }
 
