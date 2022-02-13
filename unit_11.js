@@ -73,13 +73,12 @@ document.querySelector(".b-5").onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
-
 let d6 = ["test", 5, 12];
 
 function f6() {
   let val = document.querySelector(".i-6");
   d6[d6.length] = val.value;
-  
+
   showArr(".out-6", d6);
 }
 
@@ -94,7 +93,7 @@ document.querySelector(".b-6").onclick = f6;
 let d7 = ["china", "india", "brazil", "japan", "egypt"];
 
 function f7() {
-  d7[d7.length--]; 
+  d7[d7.length--];
   showArr(".out-7", d7);
 }
 
@@ -109,10 +108,14 @@ document.querySelector(".b-7").onclick = f7;
 let d8 = [2, "4", 12, 67, "hello"];
 
 function f8() {
-  let val = document.querySelector('.i-8').value;
-	d8[d8.length] = val;
-	
-  
+  let input = document.querySelector(".i-8").value;
+  let d = [];
+  d[0] = input;
+  for (let i = 0; i < d8.length; i++) {
+    d[i + 1] = d8[i];
+  }
+  d8 = d;
+
   showArr(".out-8", d8);
 }
 
