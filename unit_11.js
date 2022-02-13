@@ -94,7 +94,7 @@ document.querySelector(".b-6").onclick = f6;
 let d7 = ["china", "india", "brazil", "japan", "egypt"];
 
 function f7() {
-  d7[d7.length --]; 
+  d7[d7.length--]; 
   showArr(".out-7", d7);
 }
 
@@ -109,6 +109,10 @@ document.querySelector(".b-7").onclick = f7;
 let d8 = [2, "4", 12, 67, "hello"];
 
 function f8() {
+  let val = document.querySelector('.i-8');
+	d8[d8.length] = val.value;
+	
+  
   showArr(".out-8", d8);
 }
 
