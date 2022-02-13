@@ -94,6 +94,7 @@ document.querySelector(".b-6").onclick = f6;
 let d7 = ["china", "india", "brazil", "japan", "egypt"];
 
 function f7() {
+  d7[d7.length --]; 
   showArr(".out-7", d7);
 }
 
