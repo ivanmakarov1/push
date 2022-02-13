@@ -130,6 +130,12 @@ document.querySelector(".b-8").onclick = f8;
 let d9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
+  let d = [];
+  d[0];
+  for (let i = 0; i < d9.length; i++) {
+    d[i - 1] = d9[i];
+  }
+  d9 = d;
   showArr(".out-9", d9);
 }
 
@@ -144,6 +150,7 @@ document.querySelector(".b-9").onclick = f9;
 let d10 = [3, 14, 15, 92, 6];
 
 function f10() {
+  d10.reverse();
   showArr(".out-10", d10);
 }
 
