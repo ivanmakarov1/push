@@ -180,9 +180,12 @@ document.querySelector(".b-11").onclick = f11;
 let d12 = [6, 62, 60, 70, 1, 5];
 
 function f12() {
+  let out = "";
+  document.querySelector('.out-12').innerHTML = out;
+  let val = document.querySelector('i-12');
   for(let i = 0; i < d12.length; i++){
-    if(d12 != d12 ){
-
+    if(d12 !== val ){
+      out += -1;
     }
   }
 }
