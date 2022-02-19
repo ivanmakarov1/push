@@ -211,6 +211,7 @@ function f13() {
     d13[j] = d13[i];
     d13[i] = temp;
   }
+
   showArr(".out-13", d13);
 }
 
