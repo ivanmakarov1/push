@@ -205,6 +205,12 @@ document.querySelector(".b-12").onclick = f12;
 let d13 = [6, 0, 22, 1, 4, 76];
 
 function f13() {
+  for (let i = 0, j = d13.length - 1, mid = d13.length / 2; i < mid; i++, j--) {
+    let temp = d13[j];
+
+    d13[j] = d13[i];
+    d13[i] = temp;
+  }
   showArr(".out-13", d13);
 }
 
