@@ -288,6 +288,10 @@ let d171 = ["a", "b", "c", "d"];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
+  for (let i = 0, j = 0; i < d171.length, j < d172.length; i++, j++){
+    d17 = d171;
+    
+  }
   showArr(".out-17", d17);
 }
 
