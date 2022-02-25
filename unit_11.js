@@ -246,15 +246,15 @@ document.querySelector(".b-14").onclick = f14;
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
-  let val = +document.querySelector('.i-15').value;
-    let flag = true;
-    for (let i = 0; i < d15.length - 1; i++) {
-        if (d15[i] == val) {
-            flag = false;
-            break;
-        } 
+  let val = +document.querySelector(".i-15").value;
+  let flag = true;
+  for (let i = 0; i < d15.length - 1; i++) {
+    if (d15[i] == val) {
+      flag = false;
+      break;
     }
-    if (flag) d15.push(val);
+  }
+  if (flag) d15.push(val);
   showArr(".out-15", d15);
 }
 
@@ -288,9 +288,8 @@ let d171 = ["a", "b", "c", "d"];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
-  for (let i = 0, j = 0; i < d171.length, j < d172.length; i++, j++){
-    d17 = d171;
-    
+  for (let i = 0; i < d172.length; i++) {
+    d17 = d171 += d172[i];
   }
   showArr(".out-17", d17);
 }
