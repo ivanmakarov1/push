@@ -304,7 +304,10 @@ document.querySelector(".b-17").onclick = f17;
 
 let d18 = ["b", "c", "45", "e", "z", "y"];
 
-function f18() {}
+function f18() {
+  let val = document.querySelector('.i-18').value;
+  
+}
 
 document.querySelector(".b-18").onclick = f18;
 
