@@ -306,9 +306,9 @@ let d18 = ["b", "c", "45", "e", "z", "y"];
 
 function f18() {
   let val = document.querySelector('.i-18').value;
+  document.querySelector('.out-18').innerHTML = d18.includes(val);
   
 }
-
 document.querySelector(".b-18").onclick = f18;
 
 // Task 19
