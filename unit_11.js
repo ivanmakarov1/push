@@ -331,7 +331,9 @@ let d19 = [
 ];
 let maxString = "";
 
-function f19() {}
+function f19() {
+  
+}
 
 document.querySelector(".b-19").onclick = f19;
 
