@@ -332,7 +332,14 @@ let d19 = [
 let maxString = "";
 
 function f19() {
-  
+  let out = '';
+  for(let i = 0; i < d19.length; i++){
+    if(maxString.length < d19[i].length){
+      maxString = d19[i].length; 
+    } 
+  }
+   out = maxString;
+   document.querySelector('.out-19').innerHTML = out;
 }
 
 document.querySelector(".b-19").onclick = f19;
