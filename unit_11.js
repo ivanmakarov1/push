@@ -288,9 +288,11 @@ let d171 = ["a", "b", "c", "d"];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
-  for (let i = 0; i < d172.length; i++) {
-    d17 = d171 += d172[i];
-  }
+  let d17 = [];
+    for (let i = 0; i < d172.length; i++) {
+        d171.push(d172[i]);
+    };
+    d17 = d171;
   showArr(".out-17", d17);
 }
 
@@ -334,8 +336,8 @@ let maxString = "";
 function f19() {
   let out = '';
   for(let i = 0; i < d19.length; i++){
-    if(maxString.length < d19[i].length){
-      maxString = d19[i].length; 
+    if(maxString.length < d19.length){
+      maxString = d19[i]; 
     } 
   }
    out = maxString;
