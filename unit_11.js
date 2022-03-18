@@ -182,7 +182,7 @@ let d12 = [6, 62, 60, 70, 1, 5];
 function f12() {
   let out = "";
   let input = +document.querySelector(".i-12").value;
-  for (i = 0; i < d12.length; i++) {
+  for (let i = 0; i < d12.length; i++) {
     if (d12[i] === input) {
       out = [i];
       break;
